@@ -1,0 +1,4 @@
+falcon
+uvicorn
+tortoise
+tortoise-orm[asyncpg]
