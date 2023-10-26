@@ -1,8 +1,8 @@
 import falcon.asgi
 
-from middleware.database import Database
-from src.resources.index import IndexResource
+from config.database import Database
+from src.resources.users import UsersResource
 
 app = falcon.asgi.App(middleware=[Database()])
 
-app.add_route('/', IndexResource())
+app.add_route('/', UsersResource())
