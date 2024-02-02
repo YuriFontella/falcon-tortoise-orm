@@ -1,4 +1,4 @@
-from src.models.source import Users
+from src.models.main import Users
 from src.storage.limits import limiter
 
 class UsersResource:

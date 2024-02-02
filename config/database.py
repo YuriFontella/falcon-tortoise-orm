@@ -9,7 +9,7 @@ env = os.environ.get('PYTHON_ENV', 'development')
 
 class Database:
     db_url = config.get(env, 'DB_URL')
-    modules = {'models': ['src.models.source']}
+    modules = {'models': ['src.models.main']}
     generate_schemas = True
 
     async def process_startup(self, scope, event):
