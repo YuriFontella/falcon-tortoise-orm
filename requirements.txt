@@ -1,4 +1,5 @@
 falcon
+falcon-limiter
 uvicorn
 tortoise-orm[asyncpg]
 orjson

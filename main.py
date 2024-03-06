@@ -5,8 +5,9 @@ from config.database import Database
 from src.resources.users import UsersResource
 from src.storage.transform import extra_handlers
 from src.storage.error import StorageError
+from src.storage.limiter import Limiter
 
-app = falcon.asgi.App(middleware=[Database()])
+app = falcon.asgi.App(middleware=[Database(), Limiter()])
 
 app.add_route('/users', UsersResource())
 
